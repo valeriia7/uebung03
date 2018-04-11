@@ -23,3 +23,6 @@ Gegeben ist die Musterlösung aus [Übung 2](https://github.com/hsro-wif-prg2/ue
 - Modifizieren Sie das Interface `Set` sowie die Klasse `SetImpl` so, dass sie generisch sind.
 - Ändern Sie anschließend den Testcase `SetTest` so, dass die generischen Klassen verwendet werden.
 - Modifizieren Sie nun die Klasse `Duplikate` und `DuplikateTest` so, dass die generischen Klassen verwendet werden.
+
+> Hinweis: Verwenden Sie zunächst das Interface `Comparable`.
+> Welche Änderungen müssten Sie machen, um stattdessen mit einem `Comparator` zu arbeiten?
