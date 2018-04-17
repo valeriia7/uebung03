@@ -2,11 +2,11 @@ package ueb03;
 
 import java.util.NoSuchElementException;
 
-public class SetImpl implements Set {
+public class SetImpl < T extends Comparable <T>> implements Set <T> {
 	class Element {
-		String val;
+		T val;
 		Element left, right;
-		Element(String v, Element l, Element r) {
+		Element(T v, Element l, Element r) {
 			val = v;
 			left = l;
 			right = r;
@@ -26,7 +26,7 @@ public class SetImpl implements Set {
 	Element root;
 
 	@Override
-	public boolean add(String s) {
+	public boolean add(T s) {
 		return addElement(new Element(s, null, null));
 	}
 
@@ -63,7 +63,7 @@ public class SetImpl implements Set {
 	}
 
 	@Override
-	public boolean contains(String s) {
+	public boolean contains(T s) {
 		if (root == null)
 			return false;
 
@@ -84,7 +84,7 @@ public class SetImpl implements Set {
 	}
 
 	@Override
-	public String remove(String s) {
+	public String remove(T s) {
 		if (root == null)
 			throw new NoSuchElementException();
 
@@ -128,7 +128,7 @@ public class SetImpl implements Set {
 		}
 
 		// Wert zurueck geben
-		return e.val;
+		return (String) e.val;
 	}
 
 	/**
@@ -147,7 +147,7 @@ public class SetImpl implements Set {
 		addElement(e.left);
 		addElement(e.right);
 
-		return e.val;
+		return (String) e.val;
 	}
 
 	@Override

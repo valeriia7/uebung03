@@ -1,6 +1,6 @@
 package ueb03;
 
-class Duplikate {
+class Duplikate <T>  {
 	/**
 	 * Gibt ein Set mit den Wörtern zurück, welche mindestens zwei mal im Text vorkommen.
 	 * Alle Satzzeichen im Text sollen ignoriert werden.
@@ -15,6 +15,8 @@ class Duplikate {
 				sb.append(c);
 		}
 		text = sb.toString();
+
+
 
 		Set s1 = new SetImpl();
 		Set s2 = new SetImpl();

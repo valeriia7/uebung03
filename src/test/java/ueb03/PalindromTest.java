@@ -5,10 +5,10 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-public class PalindromTest {
+public class PalindromTest  {
 	@Test
 	void testPalindrom() {
-		String[] xs = {
+		String[] xs = new String[]{
 				"a",
 				"aa",
 				"Ana",
